@@ -1,6 +1,17 @@
 #include <iostream>
 using namespace std;
 
+bool check_SCP(int n) {
+    int i = 0;
+    while(i*i <= n){
+	if(i*i == n){
+		return true;
+	    }
+	++i;
+    }
+    return false;
+}
+
 bool Check_SHT(int n)
 {
     int S = 0;
@@ -21,6 +32,12 @@ int main() {
     int n;
     cout<<"Nhap n: ";
     cin>>n;
+    if(check_SCP(n)) {
+        cout<<"La so chinh phuong";
+    } else {
+        cout<<"Khong la so chinh phuong";
+    }
+
     if(Check_SHT(n)) {
         cout<<"La so hoan thien";
     } else {
