@@ -23,7 +23,7 @@ int main() {
     if(check_SCP(n)) {
         cout<<"La so chinh phuong";
     } else {
-        cout<<"La so hoan thien";
+        cout<<"Khong la so chinh phuong";
     }
 
 
